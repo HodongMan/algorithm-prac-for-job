@@ -73,6 +73,19 @@ void printNode(LinkedList* list)
     }
 }
 
+void deleteList(LinkedList* list)
+{
+    Node* tempNode = list->Head;
+
+    while(tempNode != list->Tail){
+	tempNode = tempNode->next;
+	free(tempNode->prev);
+    }
+    
+    free(tempNode->next);
+    free(list);
+}
+
 int main()
 {
     LinkedList* list = makeLinkedList();
@@ -84,5 +97,7 @@ int main()
     addNode(list, node2);
     addNode(list, node3);
     printNode(list);
+
+    deleteList(list);
     return 0;
 }
