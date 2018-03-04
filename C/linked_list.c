@@ -1,22 +1,7 @@
+#include "linked_list.h"
+
 #include <stdio.h>
 #include <stdlib.h>
-
-
-struct _node {
-
-    int data;
-    struct _node* next;
-    struct _node* prev;
-};
-
-struct _linked_list {
-
-    struct _node* Head;
-    struct _node* Tail;
-};
-
-typedef struct _node Node;
-typedef struct _linked_list LinkedList;
 
 LinkedList* makeLinkedList()
 {
