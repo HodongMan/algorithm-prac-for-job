@@ -1,11 +1,6 @@
 #ifndef _LINKED_LIST_H_
 #define _LINKED_LSIT_H_
 
-
-#include <stdio.h>
-#include <stdlib.h>
-
-
 struct _node {
 
     int data;
