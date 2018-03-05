@@ -116,6 +116,8 @@ void deleteList(LinkedList* list)
     list = NULL;
 }
 
+
+/*
 int main()
 {
     LinkedList* list = makeLinkedList();
@@ -131,3 +133,5 @@ int main()
     deleteList(list);
     return 0;
 }
+
+*/
