@@ -40,6 +40,7 @@ int pop(Stack* stack)
     stack->Tail = stack->Tail->prev;
     stack->count -= 1;
 
+    free(delNode);
     return delData;
 }
 
@@ -50,7 +51,6 @@ static int isEmpty(Stack* stack)
 
 
 /*
-
 int main()
 {
     Stack* stack = makeStack();
@@ -65,5 +65,4 @@ int main()
 
     return 0;
 }
-
 */
