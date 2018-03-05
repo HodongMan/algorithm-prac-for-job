@@ -12,6 +12,7 @@ struct _linked_list {
 
     struct _node* Head;
     struct _node* Tail;
+    int count;
 };
 
 typedef struct _node Node;
@@ -19,8 +20,12 @@ typedef struct _linked_list LinkedList;
 
 LinkedList* makeLinkedList();
 Node* makeNode(int value);
-void addNode(LinkedList* list, Node* node);
+
+void addNode(LinkedList* list, int data);
+void deleteNode(LinkedList* list, int data);
+
 void printNode(LinkedList* list);
 void deleteList(LinkedList* list);
+
 
 #endif
